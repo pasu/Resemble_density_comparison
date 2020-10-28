@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML5 Canvas - Rainbow Gradient</title>
+</head>
+<body>
+<canvas id="demoCanvas" width="500" height="600"></canvas>
+<script>
+var canvas = document.getElementById("demoCanvas");  
+if (canvas.getContext)   
+{  
+var ctx = canvas.getContext("2d");         
+var gradient = ctx.createLinearGradient(0, 0, 500, 0);
+gradient.addColorStop(0, 'blue');
+        gradient.addColorStop(0.33, 'cyan');
+        gradient.addColorStop(0.5, '#52D017');
+        gradient.addColorStop(0.66, 'yellow');
+        gradient.addColorStop(4 / 5, 'orange');
+        gradient.addColorStop(5 / 5, 'red');
+ctx.fillStyle = gradient;
+ctx.fillRect(0, 0, 500, 75);
+}
+</script>
+</body> 
+</html>
