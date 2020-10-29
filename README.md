@@ -18,7 +18,7 @@
 
 The source code is :https://github.com/rsmbl/Resemble.js
 
-IBased on resemble.js, I did modification to support density comparison.
+Based on resemble.js, I did modification to support density comparison.
 
 ### Get it
 
